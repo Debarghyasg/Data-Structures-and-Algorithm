@@ -15,7 +15,7 @@ public class recursion_backtrack {
     public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       f3 obj=new f3();
-      obj.f5(10,1);
+      obj.f5(10,11);
      
     
 }
