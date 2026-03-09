@@ -1,0 +1,42 @@
+//Find largeselement in an array
+//Time complexity is O(n) and space complexity is O(1)
+
+import java.util.*;
+class large{
+    int largest(int arr[],int n){
+        int largest=arr[0];
+        for(int i=0;i<n;i++){
+            if(arr[i]>largest){
+                i++;
+                for(int j=0;j<n;j++){
+                    if(arr[j]>largest && arr[j]<arr[i]){
+                        largest=arr[j];
+                    }
+                }
+            }
+        }
+        return largest;
+    }
+
+
+}
+
+public class Seclargest {
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the array size ");
+    int n=sc.nextInt();
+    int arr[]=new int[n];
+    System.out.println("enter the array elements ");
+    for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+    }
+    large obj=new large();
+    int result=obj.largest(arr, n);
+    System.out.println("the largest element is "+result);
+    
+    
+    
+}
+}
+
