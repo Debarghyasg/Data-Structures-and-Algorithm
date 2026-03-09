@@ -18,23 +18,23 @@ class merge{
             int right=mid+1;
             while(left<=mid && right<=high){
                 if(arr[left]<=arr[right]){
-                    temp[left-low]=arr[left];
+                    temp[left-low]=arr[left]; //check
                     left++;
                 }
                 else{
-                    temp[right-low]=arr[right];
+                    temp[right-low]=arr[right]; //check
                     right++;
                 }}
                 while(left<=mid){
-                    temp[left-low]=arr[left];
+                    temp[left-low]=arr[left]; //check
                     left++;
                 }
                 while(right<=high){
-                    temp[right-low]=arr[right];
+                    temp[right-low]=arr[right]; //check
                     right++;
                 }
                         for(int i=low;i<=high;i++){
-                            arr[i]=temp[i-low];
+                            arr[i]=temp[i-low]; //check
                         }
                         
                         
