@@ -4,18 +4,17 @@
 import java.util.*;
 class large{
     int largest(int arr[],int n){
-        int largest=arr[0];
+        int Second_largest=arr[0];
         for(int i=0;i<n;i++){
-            if(arr[i]>largest){
-                i++;
+            if(arr[i]>Second_largest){
                 for(int j=0;j<n;j++){
-                    if(arr[j]>largest && arr[j]<arr[i]){
-                        largest=arr[j];
+                    if(arr[j]>Second_largest && arr[j]<arr[i]){
+                        Second_largest=arr[j];
                     }
                 }
             }
         }
-        return largest;
+        return Second_largest;
     }
 
 
