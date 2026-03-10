@@ -16,9 +16,27 @@ class large{
         }
         return Second_largest;
     }
+    int smallest(int[] arr,int n){
+        int Ssmallest=arr[0];
+                for(int i=0;i<arr.length;i++){
+                    if(arr[i]<Ssmallest);
+                    
+                for(int j=0;j<n;j++){
+                    if(arr[j]<Ssmallest && arr[j]>arr[i])
+                        {
+                        Ssmallest=arr[j];
+                    }
+                }
+            }
+            return Ssmallest;
+            }
+
+        }
+
+    
 
 
-}
+
 
 public class Seclargest {
     public static void main(String[] args){
@@ -32,7 +50,8 @@ public class Seclargest {
     }
     large obj=new large();
     int result=obj.largest(arr, n);
-    System.out.println("the largest element is "+result);
+    int result2=obj.smallest(arr,n);
+    System.out.println("the largest element is "+result+"  "+"second smallest is "+result2);
     
     
     
