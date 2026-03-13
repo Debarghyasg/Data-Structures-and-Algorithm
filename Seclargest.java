@@ -9,7 +9,7 @@ class large{
             if(arr[i]>Second_largest){
                 for(int j=0;j<n;j++){
                     if(arr[j]>Second_largest && arr[j]<arr[i]){
-                        Second_largest=arr[j];
+                        Second_largest=arr[j]; 
                     }
                 }
             }
