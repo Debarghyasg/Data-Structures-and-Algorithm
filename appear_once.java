@@ -1,5 +1,6 @@
 //i have to find out if pair of numbers are given in an array the find number which occurs only once
 //I/P-[1,1,2,3,3]   O/P-2
+//valid if they are next to each other
 import java.util.*;
 class appear{
     int appear2(int[] arr,int n){

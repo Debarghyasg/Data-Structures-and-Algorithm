@@ -1,3 +1,6 @@
+//i have to find out if pair of numbers are given in an array the find number which occurs only once
+//I/P-[1,1,2,3,3]   O/P-2
+
 import java.util.*;
 class appear {
     int findSingle(int[] arr) {
