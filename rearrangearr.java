@@ -1,4 +1,4 @@
-//Brute Force
+//Optimal
 //Find out max sum of subarray elements 
 import java.util.*;
 class max{
