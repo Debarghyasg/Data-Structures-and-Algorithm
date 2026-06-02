@@ -10,8 +10,6 @@ class Node{
 }
 public class preorder{
     Node root;
-
-    
     void preorder2(Node node){
         if(node==null){
         return;
