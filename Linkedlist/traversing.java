@@ -1,4 +1,3 @@
-
 import java.util.*;
 class Node{
     int data;
@@ -13,7 +12,7 @@ class Node{
     }
 }
 public class traversing{
-    private static Node traversing2(int[] arr){
+    public static Node traversing2(int[] arr){
         Node head=new Node(arr[0]);
         Node mover=head;
         for(int i=1;i<arr.length;i++){
